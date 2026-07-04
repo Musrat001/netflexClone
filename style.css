@@ -1,0 +1,431 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: border-box;
+
+}
+
+body {
+    background-color: black;
+}
+
+
+#backColor {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("netflix_backgroung_image.jpg") center/cover no-repeat;
+    height: 45rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+}
+
+
+#container {
+    padding: 0px 90px;
+    /* width: ; */
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    height: 90px;
+
+
+}
+
+#left-half {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 0px 50px;
+}
+
+
+
+#right-half {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 50px;
+
+}
+
+#right-half img {
+    border-radius: none;
+
+}
+
+#language {
+    padding: 6px 36px;
+    border-radius: 4px;
+    background-color: rgba(32, 30, 30, 0.803);
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+/* #lan{
+    
+} */
+
+#lang option {
+    color: black;
+    background-color: aliceblue;
+}
+
+#sign-in {
+    padding: 8px 25px;
+    background-color: red;
+    color: aliceblue;
+    border: none;
+    font-weight: bolder;
+    border-radius: 5px;
+
+}
+
+/*  hero section */
+
+#hero-section {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 37rem;
+    padding: 30px;
+}
+
+#hero-section h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    width: 520px;
+    height: 100px;
+    /* border: 1px solid red; */
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#hero-section p {
+    font-size: 20px;
+    margin-top: 40px;
+    padding: 0px 50px;
+    font-weight: bolder;
+}
+
+#hero-section h3 {
+    padding: 0px 50px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+#hero-section #email-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+#hero-section #email {
+    padding: 20px;
+    width: 320px;
+    color: aliceblue;
+    background-color: rgba(32, 30, 30, 0.803);
+    border-radius: 5px;
+    border: .5px solid aliceblue;
+
+}
+
+#hero-section #get-started {
+    font-size: 20px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: aliceblue;
+    font-weight: bolder;
+    width: 190px;
+    height: 55px;
+    text-align: center;
+    gap: 5px;
+
+}
+
+#trending h2 {
+    color: aliceblue;
+    padding: 10px;
+    margin: 20px 50px;
+}
+
+#top-10 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin: 20px 60px;
+    padding: 0px 15px;
+    width: auto;
+    height: 20em;
+    scrollbar-width: none;
+    overflow-x: auto;
+    overscroll-behavior-x: auto;
+}
+
+
+
+.movies {
+    position: relative;
+    width: auto;
+
+}
+
+#top-10 .movies span {
+    color: rgb(20, 21, 21);
+    font-size: 6rem;
+    position: absolute;
+    left: -15px;
+    bottom: 10px;
+    z-index: 3;
+    -webkit-text-stroke: 2px white;
+}
+
+.moviesImg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+#release h2 {
+    color: aliceblue;
+    padding: 10px;
+    margin: 20px 50px;
+}
+
+#messageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 50px;
+    padding: 0px 10px;
+    gap: 20px;
+
+}
+
+.message {
+    width: 50rem;
+    /* border: 1px solid red; */
+    height: 12rem;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgb(28, 31, 71) 0%, rgb(25, 22, 54) 35%, rgb(24, 18, 39) 70%, rgb(22, 14, 26) 100%);
+    color: aliceblue;
+    padding: 30px 15px;
+    position: relative;
+
+}
+
+.message h2 {
+    padding: 5px 0px;
+}
+
+#messageContainer p {
+    padding: 10px 0px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(153, 161, 168);
+}
+
+#messageContainer img {
+    height: 3rem;
+    width: auto;
+    background-size: cover;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+
+}
+
+#faqHeader {
+    color: aliceblue;
+    padding: 10px;
+    margin: 20px 50px;
+
+}
+
+
+#faqBox {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 50px;
+}
+
+#faqBox .faq {
+    padding: 8px 20px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(42, 41, 41);
+}
+
+#faqBox p {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+
+#faqBox span {
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+#bottom-email {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* height: rem; */
+    padding: 30px;
+}
+
+#bottom-email h3 {
+    padding: 0px 50px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+#bottom-email #email-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+#bottom-email #email {
+    padding: 20px;
+    width: 40rem;
+    color: aliceblue;
+    background-color: rgba(32, 30, 30, 0.803);
+    border-radius: 5px;
+    border: .5px solid aliceblue;
+
+}
+
+#bottom-email #get-started {
+    font-size: 20px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: aliceblue;
+    font-weight: bolder;
+    width: 190px;
+    height: 55px;
+    text-align: center;
+    gap: 5px;
+
+}
+
+#number p {
+    color: aliceblue;
+    padding: 10px;
+    margin: 20px 50px;
+    font-weight: 300;
+}
+
+#footer {
+    margin: 20px 30px;
+}
+
+#footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+
+
+}
+
+#footer ul li {
+    width: 15rem;
+    padding: 10px;
+}
+
+#footer ul a {
+
+    font-weight: 100;
+    color: aliceblue;
+
+}
+
+#lang_bottom {
+    padding: 6px 36px;
+    border-radius: 4px;
+    background-color: rgba(32, 30, 30, 0.803);
+    color: aliceblue;
+    font-weight: bolder;
+    width: 6rem;
+    margin: 20px 50px;
+}
+
+.cls p {
+    color: rgb(206, 202, 202);
+    margin: 20px 30px;
+    padding: 10px 20px;
+    font-weight: 100;
+    font-size: .8rem;
+}
+
+/* #msg {
+    margin-top: 10rem;
+} */
+
+
+#size {
+    margin-top: 5rem;
+    height: 5rem;
+}
+
+
+/*    creating responsiveness */
+
+
+@media (max-width: 760px) {
+
+
+    body {
+        margin: 0px;
+    }
+
+
+    #messageContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    #faqBox .faq {
+        margin: 0px;
+        width: 20rem;
+    }
+
+    #top-10 .movies {
+        margin: 0px;
+    }
+}
