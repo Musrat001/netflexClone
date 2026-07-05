@@ -60,21 +60,36 @@ nav {
 
 }
 
-#language {
+/* #language {
     padding: 6px 36px;
     border-radius: 4px;
     background-color: rgba(32, 30, 30, 0.803);
     color: aliceblue;
     font-weight: bolder;
-}
+} */
 
 /* #lan{
     
 } */
 
+
+/* #language select {
+    background-color: red;
+    width: 7rem;
+    position: absolute;
+} */
+
+#language select{
+    width: 7rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: rgba(32, 30, 30, 0.803);
+    color: aliceblue;
+}
 #lang option {
     color: black;
     background-color: aliceblue;
+    
 }
 
 #sign-in {
@@ -182,7 +197,12 @@ nav {
 .movies {
     position: relative;
     width: auto;
+    transition: all .3s ease-in-out;
 
+}
+
+.movies:hover{
+    transform: scale(1.05);
 }
 
 #top-10 .movies span {
@@ -278,6 +298,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(42, 41, 41);
+    transition: all .3s ease-in-out;
 }
 
 #faqBox p {
@@ -428,4 +449,9 @@ nav {
     #top-10 .movies {
         margin: 0px;
     }
+}
+
+
+#faqBox .faq:hover {
+    background-color: rgb(93, 92, 92)
 }
